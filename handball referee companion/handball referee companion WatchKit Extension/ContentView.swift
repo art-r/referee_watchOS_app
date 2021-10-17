@@ -9,33 +9,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var heimTore = 0
-    @State private var gastTore = 0
+    @State private var homeGoals = 0
+    @State private var guestGoals = 0
     
-    func incrementHeim() {
-        heimTore += 1
+    func incrementHome() {
+        homeGoals += 1
     }
 
-    func decrementHeim() {
-        if (heimTore > 0) {
-            heimTore -= 1
+    func decrementHome() {
+        if (homeGoals > 0) {
+            homeGoals -= 1
 
         }
     }
     
-    func incrementGast() {
-        gastTore += 1
+    func incrementGuest() {
+        guestGoals += 1
     }
     
-    func decrementGast() {
-        if (gastTore > 0) {
-            gastTore -= 1
+    func decrementGuest() {
+        if (guestGoals > 0) {
+            guestGoals -= 1
         }
         
     }
     func resetGoals() {
-        heimTore = 0
-        gastTore = 0
+        homeGoals = 0
+        guestGoals = 0
     }
     
     @State private var showingConfirm = false
@@ -43,7 +43,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 20) {
-                Button("-1 H", action:decrementHeim)
+                Button("-1 H", action:decrementHome)
                     .font(.system(size: 20, weight: .bold, design: .rounded))
                     .buttonStyle(.plain)
                 
@@ -56,24 +56,25 @@ struct ContentView: View {
                     .confirmationDialog("Reset Goals?", isPresented: $showingConfirm, titleVisibility: .visible) {
                         Button("Yes", action:resetGoals)
                     }
-                Button("-1 G", action:decrementGast)
+                
+                Button("-1 G", action:decrementGuest)
                     .font(.system(size: 20, weight: .bold, design: .rounded))
                     .buttonStyle(.plain)
             }
             
         Spacer()
             
-        Text("Heim - Gast")
+        Text("Home - Guest")
                 .fontWeight(.bold)
         
-        Text("\(heimTore) - \(gastTore)")
+        Text("\(homeGoals) - \(guestGoals)")
                 .font(
                     .system(size: 40, weight: .bold, design: .rounded)
                 )
             .bold()
             HStack {
-                Button("Tor H", action:incrementHeim)
-                Button("Tor G", action:incrementGast)
+                Button("Goal H", action:incrementHome)
+                Button("Goal G", action:incrementGuest)
             }
             .buttonStyle(.bordered)
         }

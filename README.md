@@ -24,9 +24,12 @@ This is a very simple **Standalone WatchOS App** for Handball referees
 
 # Note on compatibility:
 - As this app is simply it should run on every Apple Watch
-- **Please note that it has been optimized for the 44mm+ Watches:**\
-<img src="demo_material/AppInterface-44mm.png" alt="44mm Series 5 Screenshot" width="200"/>\
-***On smaller Apple Watches it will still work fully but the reset button will be shrinked:***\
+- **Please note that it has been optimized for the 44mm+ Watches:**
+
+<img src="demo_material/AppInterface-44mm.png" alt="44mm Series 5 Screenshot" width="200"/>
+
+***On smaller Apple Watches it will still work fully but the reset button will be shrinked:***
+
 <img src="demo_material/AppInterface-40mm.png" alt="44mm Series 5 Screenshot" width="200"/>
 
 <br>
@@ -39,7 +42,8 @@ This is a very simple **Standalone WatchOS App** for Handball referees
 - Connect your iPhone (that needs to be connected to your Apple Watch)
 - In the upper menu click on the 'Product' tab and in the now opened drop down menu select 'Destination' -> There select your connected iPhone
 - Now click the Play Button in the upper left in Xcode (*Xcode will then build and load the App to your Watch*)
-- If this succeeds you should find the App on your Apple Watch:\
+- If this succeeds you should find the App on your Apple Watch:
+
 <img src="demo_material/HomeScreen_AppIcon.png" alt="44mm Series 5 Screenshot" width="200"/>
 
 <br>

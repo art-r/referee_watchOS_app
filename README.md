@@ -56,3 +56,5 @@ This is a very simple **Standalone WatchOS App** for Handball referees
 https://uxwing.com/whistle-icon/
 
 Icons compiled for Apple Watch with: https://appicon.co/
+
+Repo Image created with: https://www.bannerbear.com
